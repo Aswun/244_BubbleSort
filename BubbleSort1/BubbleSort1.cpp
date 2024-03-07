@@ -8,19 +8,19 @@ void input()
 {
     while (true) 
     {
-        cout << "masukan banyaknya elemen pada array : " << endl;
+        cout << "masukan banyaknya element pada array : " << endl;
         cin >> n;
         if (n <= 20)
             break;
         else 
         {
-            cout << "array dapat mempunyai maksimal 20 elemen" << endl;
+            cout << "array dapat mempunyai maksimal 20 element" << endl;
 
         }
     }
     cout << endl;
     cout << "=========================" << endl;
-    cout << "masukan elemen array" << endl;
+    cout << "masukan element array" << endl;
     cout << "=========================" << endl;
 
     for (int i = 0; i < n; i++) {
@@ -45,7 +45,22 @@ void bubblesortarray() //prosedur untuk mengurutkan array dengan
         }
         pass = pass + 1; //step 4
     } 
-    while (pass < -1); //step 5
+    while (pass < - 1); //step 5
+}
+
+
+void display()
+{
+    cout << endl;
+    cout << "=========================" << endl;
+    cout << "element array telah tersusun" << endl;
+    cout << "=========================" << endl;
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j] << endl; // output setiap element pada garis baru
+    }
+    cout << "jumlah pass = " << n - 1 << endl; // menampilkan total
+    cout << endl;
 }
 
 int main()
